@@ -30,5 +30,5 @@ WHERE customer_id NOT IN (SELECT customer_id
 SELECT product_name
 FROM products
 WHERE product_id = ANY (SELECT product_id
-						FROM order_details
-						WHERE quantity = 10);
+                        FROM order_details
+                        WHERE quantity = 10);
